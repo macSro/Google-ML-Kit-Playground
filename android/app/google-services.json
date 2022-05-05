@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "900266651041",
+    "project_id": "mams-lab-3",
+    "storage_bucket": "mams-lab-3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900266651041:android:dd2a949f8599c145826fe0",
+        "android_client_info": {
+          "package_name": "pl.edu.pwr.lab3.i242450.lab3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900266651041-c71jvm7givgosce0so3mbt9imhmfhgme.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6z3KEggG2XoTWrouJVRonzbmtIpC5Aj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900266651041-c71jvm7givgosce0so3mbt9imhmfhgme.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
