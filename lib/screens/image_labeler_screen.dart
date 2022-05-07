@@ -15,15 +15,9 @@ class _ImageLabelerScreenState extends State<ImageLabelerScreen> {
   final ImageLabeler _imageLabeler = ImageLabeler(
     options: ImageLabelerOptions(),
   );
-  bool _isReady = false;
+  bool _isReady = true;
   bool _isBusy = false;
   CustomPaint? _customPaint;
-
-  @override
-  void initState() {
-    super.initState();
-    _isReady = true;
-  }
 
   @override
   void dispose() {

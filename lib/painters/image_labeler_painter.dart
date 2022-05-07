@@ -12,25 +12,30 @@ class ImageLabelerPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final ui.ParagraphBuilder builder = ui.ParagraphBuilder(
       ui.ParagraphStyle(
-          textAlign: TextAlign.left,
-          fontSize: 23,
-          textDirection: TextDirection.ltr),
+        textAlign: TextAlign.left,
+        fontSize: 23,
+        textDirection: TextDirection.ltr,
+      ),
     );
 
     builder.pushStyle(ui.TextStyle(color: Colors.white));
 
     for (final ImageLabel label in labels) {
-      builder.addText('Label: ${label.label}, '
-          'Confidence: ${label.confidence.toStringAsFixed(2)}\n');
+      builder.addText(
+        'Label: ${label.label}, '
+        'Confidence: ${label.confidence.toStringAsFixed(2)}\n',
+      );
     }
 
     builder.pop();
 
     canvas.drawParagraph(
       builder.build()
-        ..layout(ui.ParagraphConstraints(
-          width: size.width,
-        )),
+        ..layout(
+          ui.ParagraphConstraints(
+            width: size.width,
+          ),
+        ),
       const Offset(0, 0),
     );
   }
